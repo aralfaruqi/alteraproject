@@ -1,0 +1,18 @@
+#homepage {
+  padding-top: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+#about-page {
+  padding-top: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+#experience-page {
+  padding-top: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}

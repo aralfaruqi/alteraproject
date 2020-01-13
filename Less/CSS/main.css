@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+    font-family: 'SFCompactDisplay-Regular';
+    font-weight: 400;
+    src: url("../font/SFCompactDisplay-Regular.ttf") format("truetype");
+    }
+@font-face {
+    font-family: 'SFCompactDisplay-Semibold';
+    font-weight: 400;
+    src: url("../font/SFCompactDisplay-Semibold.ttf") format("truetype");
+    }
+    
+
+body {
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+
+/* header */
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 2px solid rgb(198, 200, 204);
+}
+
+.header-logo img{
+    width:133.52px ;
+    height:66.17px ;
+}
+
+.header-nav {
+    display: table;
+    margin-left: auto;
+}
+
+.header-nav__list {
+    margin: 0;
+}
+
+.header-nav__list li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.header-nav__list li a {
+    color: #19345E;
+    display: block;
+    font-family:'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.header-nav__list li a.active, .header-nav__list li a:hover
+{
+    color: #F47522;
+    text-decoration: none;
+}
+
+
+/* body  home*/
+
+.background_home{
+    background-image: url('../assets-final-project-fe/bg-img.png') ;
+    background-size: cover;
+    padding: 100px;
+    display: flex;
+}
+
+.image_home{
+    border-radius: 50%;
+    display: flex;
+}
+
+.home_content h4{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #19345E;
+    scroll-padding-left: 20px;
+    display: flex;
+}
+
+.home_content h2{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 85px;
+    font-weight: bold;
+    color: #19345E;
+}
+
+.home_content h3{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: #19345E;
+    display: flex;
+}
+
+.home_button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #F47522;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+}
+
+.home_button:hover{
+    text-decoration: none;
+    background-color: white;
+    color:#F47522;
+    border: 0px solid white
+}
+
+/* about me */
+
+.canvas {
+    background: #F4F7FC;
+    width:100%;
+    height:100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.font-16-blue-atas{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#19345E;
+    font-family:'Robsoto', sans-serif ;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.font-16-blue {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#19345E;
+    font-family:'Roboto', sans-serif ;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+
+.font-22 {
+    font-size: 22px;
+    font-family:'Muli', sans-serif;
+    font-weight: bold;
+    color:#19345E;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.font-group{
+    align-items: start;
+    margin-left: -21px;
+
+}
+.font-18-blue-medium{
+    font-size: 18px;
+    color:#19345E;
+    font-family:'Roboto', sans-serif ;
+    font-weight: normal;
+}
+
+.font-16-blue-medium{
+    color: #19345E;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif ;
+    font-weight: normal;
+}
+
+.font-18-blue-table th{
+    font-size: 14px;
+    color:#19345E;
+    font-family:'Muli', sans-serif;
+    font-weight: 500;
+}
+.font-18-blue {
+    font-size: 18px;
+    color:#19345E;
+    font-family:'Muli', sans-serif;
+    font-weight: 600;
+}
+
+table th {
+    border: 1px solid #707070;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+#img-aboutme {
+    margin-top: 0px;
+    margin-left:225px;
+    width:300px;
+    border-radius: 10%;
+    display: flex
+}
+
+br +h2 {
+    font-size:18px;
+}
+
+#position-image {
+    position:relative;
+}
+
+#img-dot {
+    position:absolute;
+    display: flex;
+    margin-top:260px;
+    margin-left:175px;
+}
+
+
+
+/* body experience */
+
+.background_title{
+    background-color: #F4F7FC;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.experience_title{
+    font-family:'Roboto', sans-serif;
+    color: #19345E;
+    font-size: 40px;
+    text-align: start;
+    margin: 35px auto;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.background_experience{
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.post_grid{
+    border-left: 2px solid rgb(213, 219, 229);
+    padding-right: 200px;
+    padding-left: 100px;
+    margin-left: 100px;
+}
+
+.post_content{
+    box-shadow: 0px 7px 15px #C3C3C343;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    opacity: 1;       
+    margin: 40px 0;
+    padding: 10px 40px 10px 7px
+}
+.post_content:first-child{
+    margin-top: 20px;
+}
+
+
+.post_content:last-child{
+    margin-bottom: 20px;
+}
+
+.post_content:hover{
+    margin-top: -5px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    transition: all 1s ease;
+}
+
+.post_title{
+    font-family:'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #19345E;
+    padding-top: 20px;
+    padding-bottom: 8px ;
+    padding-left: 26px ;
+    margin: 0;
+}
+
+.post_date{
+    font-family:'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ACACAC;
+    padding-top: 8px;
+    padding-bottom: 8;
+    padding-left: 26px ;
+    border-bottom: 1px solid #ACACAC87 ;
+    display: inline-block;
+}
+.post_content .post{
+    font-family: 'SFCompactDisplay-Regular';
+    font-size: 14px;
+    color:#19345E;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.post_paragraph{
+    font-family: 'SFCompactDisplay-Regular';
+    font-size: 14px;
+    color:#19345E;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 26px ;
+    display: block;
+}
+
+.bullet{
+    height: 20px;
+    width: 20px;
+    background: #19345E;
+    border-radius: 50%;
+    position: absolute;
+    left: -111px;
+    top: 45%;
+}
+
+.bullet:hover{
+    margin-top: -2px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    transition: all 1.5s ease;
+    z-index: 3;
+}
+
+/* contact */
+
+#img-contact {
+    background-image: url("../assets-final-project-fe/charles-rRWiVQzLm7k-unsplash.jpg");
+    background-size: cover;
+    margin-right: 100px;
+}
+
+#img-blue-background {
+    background: #19345E;
+    opacity: 0.65;
+    width: calc(100% + 30px);
+    height: 100%;
+    margin-left: -15px;
+}
+
+.img-contact-alterra {
+    width: 248px;
+    height: 126px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    font-family:'Muli', sans-serif;
+    font-size: 23px;
+    margin-top:33px;
+    margin-bottom:30px;
+    color:#19345E;
+
+}
+
+.form-group {
+    margin-top:10px;
+    margin-right:80px;
+    font-size:20px;
+    font-family:'Muli', sans-serif;
+    color: #19345E;
+    border-radius:16px;
+}
+
+.required {
+    color: #ff0000;
+}
+
+.form-control {
+    height:60px;
+}
+
+#Role {
+    height:60px;
+}
+
+#Message {
+    resize: none;
+    border-radius:16px;
+    width:115%;
+    height: 120px;
+}
+
+.btn-primary {
+    background: #F47522 0% 0% no-repeat padding-box;
+    border: 2px solid #F47522;
+    width:150px;
+    height:43px;
+    border-radius: 30px;
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* footer */
+.background_footer{
+    margin-top: 60px;
+    background: #19345E;
+    width: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+
+.footer-center{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#img-alterra-academy {
+    display: flex;
+    width:110px;
+    height:57px;
+}
+
+.caption-social-media{
+    padding-right: 68px;
+
+}
+.social-media {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'SFCompactDisplay-Semibold';
+    color:#FFFFFF;
+    font-size:14px;
+}
+
+.logo {
+    justify-content: center;
+    display:flex;
+    text-align: center;
+}
+
+.logo a{
+    padding: 0 10px;
+    justify-content: center;
+    display:flex;
+    text-align: center;
+}
+
+.copyright {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color:#FFFFFF;
+    font-size:14px;
+    border-left: 1px solid rgb(69, 91, 125);
+    padding: 15px 0;
+}
+
+.writter{
+    font-family: 'SFCompactDisplay-Semibold';
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+@media (max-width:1199px){
+        /* header */
+        .header-nav{
+            margin-left: auto;
+            margin-top: 20px;
+            margin-bottom: 5px;
+       }   
+        .header-nav__list li{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 6px;
+        }
+        
+        /* home */
+        .background_home{
+            background-size: 70px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    
+        .home_content{
+            margin: 40px auto ;
+            text-align: center;
+        }
+    
+        .home_content h4{
+            font-size: 20px;
+            display: block;
+         
+        }
+    
+        .home_content h2{
+            font-size: 40px;
+            display: block;
+             }
+    
+        .home_content h3{
+            font-size: 20px;
+            display: block;
+            margin-bottom: 25px;
+    
+             }
+    
+        .home_content a{
+            font-size: 11px;
+             display: block;
+            padding: 8px 30px;
+        }
+    /* about */
+        .canvas{
+            margin-top: 50px;
+        }
+    
+        .font-16-blue-atas{
+            text-align: center;
+        }
+    
+        .font-16-blue{
+            text-align: right;
+        }
+    
+        .font-18-blue{
+            text-align: center;
+            margin-bottom: 30px ;
+        }
+    
+        .font-18-blue-table{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .font-18-blue-table th{
+            text-align: center;
+        }
+        #img-aboutme {
+            position: relative;
+            width:300px;
+            border-radius: 10%;
+            margin: 50px auto 0px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        #img-dot {
+            display: none;
+        }
+    
+        /* experience */
+        .canvas-2{
+            margin-top: 50px;
+        }
+        .background_title{
+            margin-top: 0px;
+        }
+    
+        .post_grid{
+            padding-right: 0px;
+            padding-left: 20px;
+            margin-left: 0px;
+        }
+    
+        .bullet{
+            left: -30px;
+        }
+        /* footer */
+    
+        #img-alterra-academy {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .caption-social-media{
+            display: none;
+        }
+        .logo{
+            display: flex;
+            margin: 0 auto 10px auto;
+        }
+        .copyright {
+            border-left: 0;
+        }
+    
+        /* contact */
+    
+        .contact_header{
+            margin-top: 40px;
+        }
+        
+        .form-group {
+            margin-top:0;
+            margin-right:0;
+        }
+    
+        #Message {
+            resize: none;
+            border-radius:12px;
+            width:100%;
+            height: 100%;
+        }
+        #img-contact {
+            display: none;
+    
+        }
+        #img-blue-background {
+            display: none;
+        }
+        .img-contact-alterra {
+            display: none;
+        }
+}
+
+@media (max-width:767px){
+
+    /* header */
+    .header-nav{
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+   }   
+    .header-nav__list li{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 6px;
+    }
+    
+    /* home */
+    .background_home{
+        background-size: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .home_content{
+        margin: 40px auto ;
+        text-align: center;
+    }
+
+    .home_content h4{
+        font-size: 20px;
+        display: block;
+     
+    }
+
+    .home_content h2{
+        font-size: 40px;
+        display: block;
+         }
+
+    .home_content h3{
+        font-size: 20px;
+        display: block;
+        margin-bottom: 25px;
+
+         }
+
+    .home_content a{
+        font-size: 15px;
+         display: inline-block;
+        padding: 10px 30px;
+    }
+/* about */
+    .canvas{
+        margin-top: 50px;
+    }
+
+    .font-16-blue-atas{
+        text-align: center;
+    }
+
+    .font-16-blue{
+        text-align: right;
+    }
+
+    .font-18-blue{
+        text-align: center;
+        margin-bottom: 30px ;
+    }
+
+    .font-18-blue-table{
+        display: flex;
+        justify-content: center;
+    }
+
+    .font-18-blue-table th{
+        text-align: center;
+    }
+    #img-aboutme {
+        position: relative;
+        width:300px;
+        border-radius: 10%;
+        margin: 50px auto 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #img-dot {
+        display: none;
+    }
+
+    /* experience */
+    .canvas-2{
+        margin-top: 50px;
+    }
+    .background_title{
+        margin-top: 0px;
+    }
+
+    .post_grid{
+        padding-right: 0px;
+        padding-left: 20px;
+        margin-left: 0px;
+    }
+
+    .bullet{
+        left: -30px;
+    }
+    /* footer */
+
+    #img-alterra-academy {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .caption-social-media{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        margin: 0 auto 10px auto;
+    }
+    .copyright {
+        border-left: 0;
+    }
+
+    /* contact */
+
+    .contact_header{
+        margin-top: 40px;
+    }
+    
+    .form-group {
+        margin-top:0;
+        margin-right:0;
+    }
+
+    #Message {
+        resize: none;
+        border-radius:12px;
+        width:100%;
+        height: 100%;
+    }
+    #img-contact {
+        display: none;
+
+    }
+    #img-blue-background {
+        display: none;
+    }
+    .img-contact-alterra {
+        display: none;
+    }
+}

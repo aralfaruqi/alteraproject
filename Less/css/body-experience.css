@@ -1,0 +1,104 @@
+.background_title {
+  background-color: #F4F7FC;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.background_experience {
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.experience_title {
+  font-family: 'Roboto', sans-serif;
+  color: #19345E;
+  font-size: 40px;
+  text-align: start;
+  margin: 35px auto;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.post_title {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #19345E;
+  padding-top: 20px;
+  padding-bottom: 8px ;
+  padding-left: 26px ;
+  margin: 0;
+}
+.post_paragraph {
+  font-family: 'SFCompactDisplay-Regular';
+  font-size: 14px;
+  color: #19345E;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 26px ;
+  display: block;
+}
+.post_date {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ACACAC;
+  padding-top: 8px;
+  padding-bottom: 8;
+  padding-left: 26px ;
+  border-bottom: 1px solid #ACACAC87;
+  display: inline-block;
+}
+.post_grid {
+  border-left: 2px solid #d5dbe5;
+  padding-right: 200px;
+  padding-left: 100px;
+  margin-left: 100px;
+}
+.post_content {
+  box-shadow: 0px 7px 15px #C3C3C343;
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+  opacity: 1;
+  margin: 40px 0;
+  padding: 10px 40px 10px 7px;
+}
+.post_content:first-child {
+  margin-top: 20px;
+}
+.post_content:last-child {
+  margin-bottom: 20px;
+}
+.post_content:hover {
+  margin-top: -5px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+.post_content .post {
+  font-family: 'SFCompactDisplay-Regular';
+  font-size: 14px;
+  color: #19345E;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+}
+.bullet {
+  height: 20px;
+  width: 20px;
+  background: #19345E;
+  border-radius: 50%;
+  position: absolute;
+  left: -111px;
+  top: 45%;
+}
+.bullet:hover {
+  margin-top: -2px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all 1.5s ease;
+  z-index: 3;
+}

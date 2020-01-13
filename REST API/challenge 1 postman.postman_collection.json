@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "f9f27d26-3c9e-4dcc-8455-ffb8daf30782",
+		"name": "challenge 1 postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authentiication",
+			"item": [
+				{
+					"name": "Get token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/token?client_id=adghj&client_secret=terajana",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "adghj"
+								},
+								{
+									"key": "client_secret",
+									"value": "terajana"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "get id client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update client 1234",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"client_id\": 1234,\n  \"client_key\": \"CLIENT01\",\n  \"client_secret\": \"SECRET01\",\n  \"status\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/client/{id}?id=1234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete client id 1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/client?p=12&rp=23&client_id=12&status=34",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "12"
+								},
+								{
+									"key": "rp",
+									"value": "23"
+								},
+								{
+									"key": "client_id",
+									"value": "12"
+								},
+								{
+									"key": "status",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"client_id\": 1234,\n  \"client_key\": \"CLIENT01\",\n  \"client_secret\": \"SECRET01\",\n  \"status\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/client",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get user by id 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"name\": \"Rudy Sujarwo\",\n  \"age\": 56,\n  \"sex\": \"male\",\n  \"client_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/user/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user?p=12&rp=23&title=harus&isbn=harga",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "12"
+								},
+								{
+									"key": "rp",
+									"value": "23"
+								},
+								{
+									"key": "title",
+									"value": "harus"
+								},
+								{
+									"key": "isbn",
+									"value": "harga"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"name\": \"Rudy Sujarwo\",\n  \"age\": 56,\n  \"sex\": \"male\",\n  \"client_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Rent",
+			"item": [
+				{
+					"name": "Get book-rent transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/rent/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rent",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all rent transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/rent?p=1&rp=2&book_id=3&user_id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rent"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "2"
+								},
+								{
+									"key": "book_id",
+									"value": "3"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rent a book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"book_id\": 1234,\n  \"user_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/rent",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rent"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "get book by id 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/book/{id}?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1234,\n  \"title\": \"Judul Buku Satu\",\n  \"isbn\": \"1-234-5678-9101112-13\",\n  \"writer\": \"Dr. Who\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/book/{id}?id=1234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/book/{id}?id=1234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/book?p=12&rp=23&title=ddsdssdsd&isbn=rfrfrfr",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "12"
+								},
+								{
+									"key": "rp",
+									"value": "23"
+								},
+								{
+									"key": "title",
+									"value": "ddsdssdsd"
+								},
+								{
+									"key": "isbn",
+									"value": "rfrfrfr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"client_id\": 1234,\n  \"client_key\": \"CLIENT01\",\n  \"client_secret\": \"SECRET01\",\n  \"status\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/book",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
